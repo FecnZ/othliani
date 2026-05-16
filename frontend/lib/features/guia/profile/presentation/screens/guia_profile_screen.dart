@@ -39,7 +39,10 @@ class _GuiaProfileScreenState extends State<GuiaProfileScreen> {
   EcoStats? _ecoStats;
   bool _cargandoEco = false;
 
+  // Configuración local (mock para el MVP)
   bool _notificacionesActivas = true;
+  bool _modoOscuro = false;
+  String _idiomaSeleccionado = 'Español';
 
   // Mapeo de idiomas para el dropdown ↔ Locale (Usado por GuiaLocaleCubit)
   static const _idiomaToLocale = {

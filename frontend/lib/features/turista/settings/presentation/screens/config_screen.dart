@@ -47,6 +47,7 @@ class ConfigScreen extends StatelessWidget {
                 scale: 0.85,
                 child: Switch.adaptive(
                   value: isDark,
+                  activeThumbColor: const Color(0xFF3B82F6),
                   activeTrackColor: const Color(0xFF3B82F6),
                   onChanged: (v) => context.read<ThemeCubit>().setTheme(v),
                 ),
@@ -79,6 +80,7 @@ class ConfigScreen extends StatelessWidget {
             scale: 0.85,
             child: Switch.adaptive(
               value: true,
+              activeThumbColor: const Color(0xFF3B82F6),
               activeTrackColor: const Color(0xFF3B82F6),
               onChanged: (_) {
                 ScaffoldMessenger.of(context).showSnackBar(
